@@ -1,0 +1,132 @@
+html, body {
+    width: 100%;
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+.sidebar {
+    background-color: rgb(87, 124, 247);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 10px;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 15px;
+}
+
+.main-content {
+    background-color: rgb(221, 217, 217);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 15px;
+}
+
+.main-content > .projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.main-content > .announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-right: 30px;
+}
+
+.main-content > .trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-right: 30px;
+}
+
+.main-content > .projects > .title {
+    margin: 15px 15px 0;
+    height: 30px;
+    border: 1px solid green;
+}
+
+.main-content > .projects > .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.main-content > .projects > .cards > .card {
+    border: 1px solid purple;
+    padding: 15px;
+    margin: 0 15px 15px;
+    height: 150px;
+}
+
+.main-content > .announcements > .title {
+    margin-top: 15px;
+    border: 1px solid blue;
+}
+
+.main-content > .announcements > .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-content > .announcements > .cards > .card {
+    padding: 20px;
+    height: 80px;
+    border: 1px solid purple;
+}
+
+.main-content > .trending > .title {
+    margin-top: 15px;
+    border: 1px solid blue;
+}
+
+.main-content > .trending > .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-content > .trending > .cards > .card {
+    padding: 10px;
+    border: 1px solid purple;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 30px;
+}
+
+.search-and-user {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-top: 15px;
+}
+
+.user-and-buttons {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+.user-and-buttons > .buttons {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.sidebar > .nav, 
+.sidebar > .info,
+.sidebar > .title {
+    list-style: none;
+    display: grid;
+    grid-template-columns: .1fr 7fr;
+    gap: 10px;
+    margin-bottom: 60px;
+}
