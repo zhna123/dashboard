@@ -4,7 +4,7 @@
 }
 html, body {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .material-symbols-outlined {
@@ -75,13 +75,40 @@ html, body {
 
 .main-content > .projects > .cards > .card {
     border: 1px solid purple;
-    padding: 15px;
+    padding: 25px 20px;
     margin: 0 15px 15px;
-    height: 150px;
     border-radius: var(--border_radius);
     border-style: none;
     background-color: white;
-    box-shadow: inset 8px 0 gold;
+    box-shadow: inset 8px 0 gold, 3px 3px 6px 1px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+.main-content > .projects > .cards > .card > .options {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.main-content > .projects > .cards > .card > .content > p:last-child {
+    color: gray;
+    font-size: .8rem;
+
+    height: 60px;
+    overflow:hidden; 
+    margin: 0;
+}
+
+.main-content > .projects > .cards > .card > .content > p:first-child {
+    margin: 0;
+    line-height: 30px;
+}
+
+.main-content > .projects > .cards > .card > .options > span {
+    font-variation-settings:
+    'FILL' 0;
+    margin: 5px;
+    font-size: 20px;
 }
 
 .main-content > .announcements > .title {
@@ -94,6 +121,8 @@ html, body {
     grid-template-columns: 1fr;
     border-radius: var(--border_radius);
     background-color: white;
+    padding: 10px;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .main-content > .announcements > .cards > div.divider {
@@ -104,7 +133,18 @@ html, body {
 
 .main-content > .announcements > .cards > .card {
     padding: 20px;
-    height: 80px;
+}
+
+.main-content > .announcements > .cards > .card > p:first-child {
+    margin: 0;
+    font-size: .8rem;
+    line-height: 20px;
+}
+
+.main-content > .announcements > .cards > .card > p:last-child {
+    margin: 0;
+    font-size: .7rem;
+    color: gray;
 }
 
 .main-content > .trending > .title {
@@ -118,10 +158,12 @@ html, body {
     background-color: white;
     border-radius: var(--border_radius);
     margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .main-content > .trending > .cards > .card {
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -132,8 +174,16 @@ html, body {
     align-self: center;
 }
 
-.main-content > .trending > .cards > .card > p {
+.main-content > .trending > .cards > .card > p:first-of-type {
     margin: 0;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.main-content > .trending > .cards > .card > p:last-child {
+    margin: 0;
+    color: gray;
+    font-size: .9rem;
 }
 
 .header {
